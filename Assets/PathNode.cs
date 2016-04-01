@@ -3,13 +3,11 @@ using System.Collections;
 
 public class PathNode : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+  public float distanceFromGoal;
+  public float distanceFromStart;
+  public PathNode parent;
+
+  public float GetGValue() {
+    return distanceFromGoal + distanceFromStart;
+  }
 }
